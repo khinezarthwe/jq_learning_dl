@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Jquery Basic</title>
+	<script type="text/javascript" src = "js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript"> 
+	// Jquery start reading their action 
+		$(function(){
+			//$('#xml ~ li').css('background-color','#fcf');
+			// $('ul > li:first').css('background-color', 'Lime');
+			// $('ul > li:last').css('background-color', 'Yellow');
+			$('li:contains("XML")').css('border','solid 4px Blue');
+			$('p:has(cite)').css('background-color','Yellow');
+			$('#list > li:nth-child(2n)').css('background-color','Orange');
+		});
+	</script>
+</head>
+<body>
+<br>
+<ul id = 'list'>
+	<li id = 'html'>HTML5</li>
+	<li id = 'xml' > XML </li>
+	<li id = 'js' > JavaScript </li>
+	<li id = 'php' > PHP </li>
+</ul>
+<p>site tag <cite>Thi sis me</cite></p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Attribute Filter</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(':header').css('background-color','Red');
+			//$('a[target != "_blank"]').css('background-color','Yellow');
+			//$('a[href $= ".jp"]').css('background-color','Yellow');
+			$('a[href ^= "https://"][target]').css('background-color','Yellow');
+			$('label:has(:checked)').css('background-color','Lime');
+			// $('li.js').css({
+			// 	border: '4px solid Green',
+			// 	backgroundColor: 'Yellow',
+			// 	color: 'red'
+			// });
+			// $('li.js').toggleClass('sample');
+			// window.alert('Toggle Test');
+			// $('li.js').toggleClass('sample');
+			$('img:not([title])').attr('title','Agnes');
+			$('#html').attr({
+				src: 'images/html.jpg',
+				alt: 'logo',
+				width: '80',
+				title: 'logo'
+			});
+			$('#cz').removeAttr('href');
+			$('#result_text').text('<a href="http://www.wings.msn.to">Wings</a>');
+			$('#result_html').html('<a href="http://www.wings.msn.to">Wings</a>');
+		});
+	</script>
+</head>
+<body>
+<h2 id = "caption"> Size </h2>
+<ul>
+	<li><a href="http://codezine.jp" target="other" id = 'cz'>
+		CodeZine
+	</a></li>
+	<li><a href="http://wing.to" target="_blank">
+		WINGS
+	</a></li>
+	<li><a href="http://webdel.p" target="blank">
+		WebDeli
+	</a></li>
+</ul>
+
+<p>
+	<label><input type="radio" name="gender" value="m" />Male</label>
+	<label><input type="radio" name="gender" value="f" checked="checked" />female</label>
+</p>
+
+<ul>
+	<li class="js">Javascript</li>
+	<li class="java">Java</li>
+	<li class="html">HTML</li>
+	<li class="js">JQuery</li>
+	<li class="php">PHP</li>
+</ul>
+
+<ul>
+	<li id = "result_text"></li>
+	<li id = "result_html"></li>
+</ul>
+
+<img id= 'html'/>
+<img src="images/agnes.png" />
+<img src="images/agnes_1.jpg" />
+
+</body>
+</html>

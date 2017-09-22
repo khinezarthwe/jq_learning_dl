@@ -1,0 +1,17 @@
+/*
+tag name 
+start with # for id
+start with . for class
+*/
+img {
+	float: left;
+	padding: 30px;
+	width: 800px;
+	height: 400px;
+
+}
+.sample {
+	border: 4px solid Green;
+	background-color: Yellow;
+	color: red
+}

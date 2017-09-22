@@ -1,0 +1,12 @@
+.sample {
+	border: 4px solid Green;
+	background-color: Yellow;
+	color: Red
+}
+
+img {
+	float: left;
+	padding: 30px;
+	width: 600px;
+	height: 300px;
+}

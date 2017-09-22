@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form SEtting</title>
+	<script type="text/javascript" src = "css/style.css"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('input[type="text"]').val('Let learn javascript in 10 days');
+			$('select').val('se');
+			$('textarea').val('New Jquery Book');
+			$('input[type="submit"]'.val('Send'));
+		});
+	</script>
+</head>
+<body>
+<label for = "title" >Title</label>
+<input type="text" name="title" id = "title" size = "50" /><br/>
+<input type="text" name="second title" id = "title" size = "50" /><br/>
+<label for = "publish">Publish</label>
+<select id = "publish" name = "publish">
+	<option value = "se">Se Option</option>
+	<option value = "gh">Gh Option</option>
+	<option value = "sw">Sw Option</option>
+</select>
+<br/>
+<label for = "memo"> Memo : </label>
+<textarea id = "memo" name = "memo" cols = "40" rows = "3"></textarea><br>
+<input type="submit" id= "send">
+<input type="submit" name="me">
+</body>
+</html>
