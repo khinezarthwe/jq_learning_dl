@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#books').change(function(){
+				location.href = 'http://www.wings.msn.to/index.php/-/A-03/'+ $(this).val();
+			});
+		});
+	</script>
+	<title>Change</title>
+</head>
+<body>
+<select id="books">
+	<option value="" selected> ----- Please select one---- </option>
+	<option value="978-4-8339-3793-5">HTML 5</option>
+	<option value="978-4-8339-3793-5">HTML 4</option>
+	<option value="978-4-8339-3793-5">HTML 3</option>
+	<option value="978-4-8339-3793-5">HTML 2</option>
+
+
+</select>
+</body>
+</html>

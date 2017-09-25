@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Attribute Filter</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('ul > p ').wrapInner('<li style= "border: solid 2px Red;" ></li>');
+			$('h2').replaceWith('<h3> Recommend Documentation </h3>');
+			$('#site').remove();
+		});
+
+	</script>
+</head>
+<body>
+<h2> Wrapping </h2>
+<ul>
+	<p>JavaScript</p>
+	<p>Jquery</p>
+	<p>HTML - 5 </p>
+</ul>
+<div id="site">By Japanse Book</div>
+</body>
+</html>

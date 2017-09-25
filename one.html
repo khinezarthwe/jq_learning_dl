@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Event</title>
+	<script type="text/javascript" src = "js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" >
+		$(function(){
+			$('#btn').one( 
+				'click',
+				function(){
+					if ($('#answer').val() === 'on'){
+						window.alert('You are correct');
+					} else {
+						window.alert('Sorry, You are wrong');
+					}
+				}
+			);
+		});
+	</script>
+</head>
+<body>
+<form id="fm">
+	イベント処理を設定する汎用的な命令は？
+	<input type="text" id = "answer"/>
+	<input type="button" id ="btn" value="Answer" />
+</form
+<hr/>
+</body>
+</html>

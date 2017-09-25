@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Parent , child , Slibling</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src = "js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#me')
+		.css('font-weight','bold')
+		.prev()
+		.css('background-color','pink')
+		.end()
+		.prevAll()
+		.css('color','blue')
+		.next()
+		.css('background-color','Yellow')
+		.end()
+		.nextAll()
+		.css('color','Red')
+		.end()
+		.parent()
+		.css('border','solid 1px Red')
+		.end()
+		.children()
+		.css('font-size','x-small');
+	});
+</script>
+</head>
+<body>
+<div id="family">GrandParent
+<div>Dad
+	<div>Elder Brother</div>
+	<div>Elder Sister</div>
+	<div id = "me"> Me
+		<div> Berry<div>Thar mee</div></div>
+	</div>
+	<div>Younger Sister</div>
+	<div>Younger Brother</div>
+	</div>
+</div>
+</body>
+</html>

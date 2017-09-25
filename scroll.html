@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(window).scroll(function(){
+				$('#box').css({
+					top: $(this).scrollTop() + 20,
+					left: $(this).scrollLeft() +20
+				});
+			});
+			$(document).contextmenu(function(e){
+				e.preventDefault();
+			});
+		});
+	</script>
+<title>Change</title>
+</head>
+<body>
+<ul id= "box" >
+<li><a href="top.html"> top </a></li>
+<li><a href="top.html"> top </a></li>
+<li><a href="top.html"> top </a></li>
+</ul>
+<div id="main">
+
+以上です。
+</div>
+</body>
+</html>

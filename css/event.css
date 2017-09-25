@@ -1,0 +1,22 @@
+#list{
+	margin: 0px;
+	padding: 0px;
+}
+#list li{
+	margin: 2px;
+	height: 40px;
+	list-style-type: none;
+	float: left;
+}
+#list img{
+	width: 55px;
+	height: 40px;
+}
+hr{
+	clear: both;
+}
+
+#big　{
+	width: 205px;
+	height: 235px;
+}
