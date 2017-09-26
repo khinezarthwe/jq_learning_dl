@@ -5,6 +5,12 @@ $(function(){
 	.attr('src',$('#list img:first-child').attr('src'));
 
 	$('#list img').click(function(){
-		$('#big').attr('src',$(this).attr('src'));
+		var img = $(this);
+		//$('#big').attr('src',$(this).attr('src'));
+		$('#big')
+		 .hide(1000,function() {
+		  $(this).attr('src',img.attr('src'));
+		 })
+		 .show(2000);
 	});
 });
